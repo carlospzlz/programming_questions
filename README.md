@@ -1,3 +1,3 @@
 # Programming Questions
 
-This repository contain classic programming questions.
+This repository contains classic programming questions.
