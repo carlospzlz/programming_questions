@@ -1,3 +1,3 @@
 #include <string>
 
-bool IsPalindrome(const std::string& str);
+bool IsPalindrome1(const std::string& str);
