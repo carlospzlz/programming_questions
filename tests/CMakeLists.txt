@@ -1,3 +1,3 @@
-add_executable(Tests main.cc is_palindrome_test.cc)
-target_link_libraries(Tests programming_questions)
-target_link_libraries(Tests /usr/local/lib64/libgtest.a pthread)
+add_executable(IsPalindromeTest is_palindrome_test.cc)
+target_link_libraries(IsPalindromeTest is_palindrome)
+target_link_libraries(IsPalindromeTest /usr/local/lib64/libgtest.a pthread)
