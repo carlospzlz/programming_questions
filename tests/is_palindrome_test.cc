@@ -1,19 +1,34 @@
 #include "is_palindrome.h"
 #include "gtest/gtest.h"
 
-TEST(IsPalindromeTest, EmptyStringIsPalindrome)
+TEST(IsPalindrome1Test, EmptyStringIsPalindrome)
 {
 	EXPECT_TRUE(IsPalindrome1(""));
 }
 
-TEST(IsPalindromeTest, StringIsPalindrome)
+TEST(IsPalindrome1Test, StringIsPalindrome)
 {
 	EXPECT_TRUE(IsPalindrome1("asantadoglivedasadevilgodatnasa"));
 }
 
-TEST(IsPalindromeTest, StringIsNotPalindrome)
+TEST(IsPalindrome1Test, StringIsNotPalindrome)
 {
 	EXPECT_FALSE(IsPalindrome1("helloworld"));
+}
+
+TEST(IsPalindrome2Test, EmptyStringIsPalindrome)
+{
+	EXPECT_TRUE(IsPalindrome2(""));
+}
+
+TEST(IsPalindrome2Test, StringIsPalindrome)
+{
+	EXPECT_TRUE(IsPalindrome2("asantadoglivedasadevilgodatnasa"));
+}
+
+TEST(IsPalindrome2Test, StringIsNotPalindrome)
+{
+	EXPECT_FALSE(IsPalindrome2("helloworld"));
 }
 
 int main(int argc, char **argv)
