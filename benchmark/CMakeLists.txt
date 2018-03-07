@@ -1,4 +1,6 @@
 add_executable(is_palindrome_benchmark is_palindrome_benchmark.cc)
-
 target_link_libraries(is_palindrome_benchmark is_palindrome)
 target_link_libraries(is_palindrome_benchmark benchmark pthread)
+
+add_executable(first_non_repeated_benchmark first_non_repeated_benchmark.cc)
+target_link_libraries(first_non_repeated_benchmark benchmark pthread)
