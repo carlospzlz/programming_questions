@@ -8,3 +8,7 @@ target_link_libraries(first_non_repeated_benchmark benchmark pthread)
 add_executable(are_anagram_benchmark are_anagram_benchmark.cc)
 target_link_libraries(are_anagram_benchmark are_anagram)
 target_link_libraries(are_anagram_benchmark benchmark pthread)
+
+add_executable(fibonacci_benchmark fibonacci_benchmark.cc)
+target_link_libraries(fibonacci_benchmark fibonacci)
+target_link_libraries(fibonacci_benchmark benchmark pthread)

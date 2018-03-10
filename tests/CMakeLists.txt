@@ -8,3 +8,7 @@ target_link_libraries(first_non_repeated_test /usr/local/lib64/libgtest.a pthrea
 add_executable(are_anagram_test are_anagram_test.cc)
 target_link_libraries(are_anagram_test are_anagram)
 target_link_libraries(are_anagram_test /usr/local/lib64/libgtest.a pthread)
+
+add_executable(fibonacci_test fibonacci_test.cc)
+target_link_libraries(fibonacci_test fibonacci)
+target_link_libraries(fibonacci_test /usr/local/lib64/libgtest.a pthread)
