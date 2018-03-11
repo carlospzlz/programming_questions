@@ -12,3 +12,7 @@ target_link_libraries(are_anagram_test /usr/local/lib64/libgtest.a pthread)
 add_executable(fibonacci_test fibonacci_test.cc)
 target_link_libraries(fibonacci_test fibonacci)
 target_link_libraries(fibonacci_test /usr/local/lib64/libgtest.a pthread)
+
+add_executable(baseball_game_test baseball_game_test.cc)
+target_link_libraries(baseball_game_test baseball_game)
+target_link_libraries(baseball_game_test /usr/local/lib64/libgtest.a pthread)
