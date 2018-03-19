@@ -16,7 +16,7 @@ void drawMatrix(std::pair<int, int> target,
     }
     std::cout << std::endl;
   }
-  usleep(1E6);
+  usleep(.5E6);
 }
 
 void countNumberOfPathsRec(std::pair<int, int> start, std::pair<int, int> end,
@@ -24,9 +24,7 @@ void countNumberOfPathsRec(std::pair<int, int> start, std::pair<int, int> end,
   if (M[start.first][start.second] == 0){
     return;
   }
-  if (M[start.first][start.second] == 1) {
-    M[start.first][start.second] = 0;
-  }
+  M[start.first][start.second] = 0;
   drawMatrix(start, M, 41);
   if (start.first > 0) {
     drawMatrix({start.first - 1, start.second}, M, 44);
@@ -50,12 +48,12 @@ void countNumberOfPathsRec(std::pair<int, int> start, std::pair<int, int> end,
 
 int main() {
   std::vector<std::vector<int>> M = {
-      {1, 0, 0, 0},
-      {1, 0, 0, 0},
-      {1, 1, 1, 1},
-      {0, 0, 0, 1}
+      {1, 1, 1, 1, 1},
+      {1, 0, 1, 0, 1},
+      {1, 1, 1, 0, 1},
+      {0, 0, 1, 1, 1}
   };
-  countNumberOfPathsRec({1, 0}, {3, 3}, M);
-  countNumberOfPathsRec({0, 1}, {3, 3}, M);
+  countNumberOfPathsRec({1, 0}, {3, 4}, M);
+  countNumberOfPathsRec({0, 1}, {3, 4}, M);
   return 0;
 }
