@@ -1,3 +1,5 @@
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/tests)
+
 add_executable(is_palindrome_test is_palindrome_test.cc)
 target_link_libraries(is_palindrome_test is_palindrome)
 target_link_libraries(is_palindrome_test /usr/local/lib64/libgtest.a pthread)
