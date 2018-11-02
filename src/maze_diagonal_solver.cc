@@ -89,6 +89,7 @@ std::vector<std::vector<Cell>> createMaze(size_t width, size_t height,
 
 void print(const std::vector<std::vector<Cell>>& maze)
 {
+    static size_t count = 0;
     system("clear");
     for (const auto& row : maze)
     {
@@ -98,6 +99,8 @@ void print(const std::vector<std::vector<Cell>>& maze)
         }
         std::cout << std::endl;
     }
+    std::cout << "Iterations: " << ++count << std::endl;
+    std::cout.flush();
     usleep(1E5);
 }
 
