@@ -22,3 +22,7 @@ target_link_libraries(baseball_game_test /usr/local/lib64/libgtest.a pthread)
 add_executable(find_kth_largest_test find_kth_largest_test.cc)
 target_link_libraries(find_kth_largest_test find_kth_largest)
 target_link_libraries(find_kth_largest_test /usr/local/lib64/libgtest.a pthread)
+
+add_executable(rotate_matrix_test rotate_matrix_test.cc)
+target_link_libraries(rotate_matrix_test rotate_matrix)
+target_link_libraries(rotate_matrix_test /usr/local/lib64/libgtest.a pthread)
