@@ -26,3 +26,7 @@ target_link_libraries(find_kth_largest_test /usr/local/lib64/libgtest.a pthread)
 add_executable(rotate_matrix_test rotate_matrix_test.cc)
 target_link_libraries(rotate_matrix_test rotate_matrix)
 target_link_libraries(rotate_matrix_test /usr/local/lib64/libgtest.a pthread)
+
+add_executable(fixed_size_map_test fixed_size_map_test.cc)
+target_link_libraries(fixed_size_map_test fixed_size_map)
+target_link_libraries(fixed_size_map_test /usr/local/lib64/libgtest.a pthread)

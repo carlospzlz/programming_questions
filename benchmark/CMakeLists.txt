@@ -16,3 +16,7 @@ target_link_libraries(fibonacci_benchmark benchmark pthread)
 add_executable(baseball_game_benchmark baseball_game_benchmark.cc)
 target_link_libraries(baseball_game_benchmark baseball_game)
 target_link_libraries(baseball_game_benchmark benchmark pthread)
+
+add_executable(fixed_size_map_benchmark fixed_size_map_benchmark.cc)
+target_link_libraries(fixed_size_map_benchmark fixed_size_map)
+target_link_libraries(fixed_size_map_benchmark benchmark pthread)
